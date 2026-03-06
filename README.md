@@ -2,41 +2,39 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Project-Completed-success)
 ![CI](https://github.com/joshuvavinith/keyboard-typing-analyzer/actions/workflows/python-tests.yml/badge.svg)
 
-A lightweight **Python desktop application** that analyzes typing activity and keyboard usage patterns within the application window.
+A lightweight **Python desktop application** that analyzes typing activity and keyboard usage patterns within an application window.
 
-The application records keyboard events while typing, generates useful statistics, and allows exporting typing session data in **JSON and CSV formats**.
-
-This project demonstrates **GUI development, event-driven programming, data logging, automated testing, and CI/CD integration** using GitHub Actions.
+The program records keyboard events while typing, calculates typing statistics, and allows exporting session data in **JSON and CSV formats**.
+The project demonstrates **event-driven programming, GUI development, automated testing, and CI/CD workflows**.
 
 ---
 
 # Application Preview
 
-![Typing Analyzer Interface](screenshots/app-interface.png)
+![Application Screenshot](screenshots/app-interface.png)
 
-The application interface allows users to start and stop typing sessions while tracking keyboard activity and generating statistics.
+The interface allows users to start a typing session, monitor keyboard activity, and export session analytics.
 
 ---
 
-# Features
+# Key Features
 
-* Desktop GUI built using **Tkinter**
+* Tkinter-based **desktop GUI**
 * Real-time typing statistics
 * Keyboard event tracking within the application window
 * Export typing session data
-* JSON and CSV export support
-* Modular Python project structure
+* JSON and CSV data export
+* Modular Python code structure
 * Automated testing using **pytest**
-* Continuous Integration with **GitHub Actions**
+* Continuous Integration using **GitHub Actions**
 
 ---
 
-# Typing Statistics Generated
+# Typing Metrics Generated
 
-The application calculates the following metrics:
+The application tracks and calculates:
 
 * Total key presses
 * Net characters typed
@@ -78,37 +76,14 @@ keyboard-typing-analyzer
 
 ---
 
-# File Overview
-
-### app.py
-
-Main GUI application that handles keyboard input events and user interaction.
-
-### analyzer.py
-
-Processes keyboard events and computes typing statistics.
-
-### export_utils.py
-
-Exports session data into JSON and CSV formats.
-
-### tests/
-
-Contains automated tests for verifying analyzer functionality.
-
-### .github/workflows/
-
-Contains the GitHub Actions configuration for running automated tests.
-
----
-
 # Technologies Used
 
-* **Python**
-* **Tkinter** – GUI framework
-* **Pytest** – Automated testing
-* **JSON / CSV** – Data export
-* **GitHub Actions** – Continuous Integration
+* Python
+* Tkinter
+* Pytest
+* JSON
+* CSV
+* GitHub Actions
 
 ---
 
@@ -121,7 +96,7 @@ git clone https://github.com/joshuvavinith/keyboard-typing-analyzer.git
 cd keyboard-typing-analyzer
 ```
 
-Create a virtual environment (recommended):
+Create a virtual environment:
 
 ### Windows
 
@@ -137,7 +112,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-Install testing dependency:
+Install dependencies for testing:
 
 ```bash
 pip install pytest
@@ -147,13 +122,13 @@ pip install pytest
 
 # Running the Application
 
-Start the program using:
+Run the program using:
 
 ```bash
 python app.py
 ```
 
-A desktop window will open where you can begin a typing session.
+This will open the typing analyzer interface.
 
 ---
 
@@ -162,7 +137,7 @@ A desktop window will open where you can begin a typing session.
 1. Enable the **consent checkbox**
 2. Click **Start** to begin recording
 3. Type inside the text area
-4. Click **Stop** to finish the session
+4. Click **Stop** to end the session
 5. Export results as **JSON or CSV**
 
 ---
@@ -175,19 +150,17 @@ Run automated tests using:
 pytest
 ```
 
-All tests should pass successfully.
-
 ---
 
 # Continuous Integration
 
-This project uses **GitHub Actions** to automatically run tests whenever code is pushed to the repository.
+This project uses **GitHub Actions** to automatically run tests on every push or pull request.
 
-The CI workflow ensures:
+The CI pipeline ensures:
 
-* Code changes do not break existing functionality
-* Automated tests run on each push or pull request
-* The project remains stable and maintainable
+* Code stability
+* Automated verification of functionality
+* Maintainable development workflow
 
 ---
 
@@ -198,29 +171,29 @@ Contributions are welcome.
 To contribute:
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a new feature branch
 3. Make your changes
 4. Submit a pull request
 
-Please read **CONTRIBUTING.md** for detailed guidelines.
+Please refer to **CONTRIBUTING.md** for detailed guidelines.
 
 ---
 
-# Security and Ethics
+# Security & Ethics
 
 This project **does not perform global keylogging**.
 
 Keyboard events are captured **only within the application window**, making it safe for educational and demonstration purposes.
 
-The software should **not be modified or used to monitor users without their consent**.
+The software should **not be used to monitor users without their consent**.
 
 ---
 
 # Educational Context
 
-This project originated from a **college value-added cybersecurity course assignment** focused on keyboard event monitoring in Python.
+This project originated from a **college value-added cybersecurity course** focused on keyboard event monitoring in Python.
 
-It has been redesigned into a **portfolio-friendly typing analysis tool** demonstrating good software engineering practices.
+It has been redesigned into a **portfolio-ready typing analysis tool** demonstrating modern software engineering practices.
 
 ---
 
