@@ -1,11 +1,14 @@
-# Typing Analyzer (In-App Key Events Only)
+# Keyboard Typing Analyzer
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Project-Completed-success)
 
-A lightweight **Python desktop application** that analyzes typing patterns and keyboard activity **only within the application window**.
-The project demonstrates event-driven programming, GUI development with Tkinter, and data logging using JSON and CSV.
+A lightweight **Python desktop application** that analyzes keyboard activity and typing patterns within the application window.
+
+The application records keyboard events while the user types inside the interface, generates useful statistics, and allows exporting typing session data in **JSON and CSV formats**.
+
+This project demonstrates GUI development, event-driven programming, and structured data logging in Python.
 
 ---
 
@@ -13,52 +16,79 @@ The project demonstrates event-driven programming, GUI development with Tkinter,
 
 ![Typing Analyzer Interface](screenshots/app-interface.png)
 
-The interface allows users to type text while the application tracks keyboard activity and generates useful typing statistics.
+The interface allows users to start a typing session, track keyboard activity, and export statistics.
 
 ---
 
 # Features
 
+* Desktop GUI built using **Tkinter**
 * Real-time typing statistics
-* Keyboard event tracking within the application window
+* Keyboard event tracking inside the application window
 * Export typing session data
-* Clean Tkinter-based GUI
-* JSON and CSV export functionality
+* JSON and CSV export support
+* Modular Python code architecture
 
-### Statistics generated
+---
+
+# Typing Statistics Generated
+
+The application calculates:
 
 * Total key presses
 * Net characters typed
-* Backspace count
-* Space and enter usage
+* Backspace usage
+* Space and Enter key counts
 * Keys per minute (KPM)
 * Most frequently used characters
+
+These metrics help analyze typing behavior and keyboard usage patterns.
 
 ---
 
 # Project Structure
 
-```
-typing-analyzer
+```id="djqynk"
+keyboard-typing-analyzer
 │
 ├── app.py
 ├── analyzer.py
 ├── export_utils.py
 ├── screenshots
 │   └── app-interface.png
+├── CONTRIBUTING.md
 ├── README.md
 ├── LICENSE
+├── .github
+│   └── ISSUE_TEMPLATE
+│       └── bug_report.md
 └── .gitignore
 ```
 
 ---
 
+# File Overview
+
+### app.py
+
+Contains the main GUI application and handles keyboard events.
+
+### analyzer.py
+
+Processes keyboard events and calculates typing statistics.
+
+### export_utils.py
+
+Handles exporting session data to JSON and CSV formats.
+
+---
+
 # Technologies Used
 
-* Python
-* Tkinter (GUI)
-* JSON (data export)
-* CSV (data export)
+* **Python**
+* **Tkinter** for GUI development
+* **JSON** for structured data storage
+* **CSV** for exporting keyboard event logs
 
 ---
 
@@ -66,7 +96,7 @@ typing-analyzer
 
 Clone the repository:
 
-```
+```id="q9dkkv"
 git clone https://github.com/joshuvavinith/keyboard-typing-analyzer.git
 cd keyboard-typing-analyzer
 ```
@@ -75,14 +105,14 @@ Create a virtual environment (recommended):
 
 ### Windows
 
-```
+```id="gyb5yo"
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### Mac / Linux
+### macOS / Linux
 
-```
+```id="ax3xt2"
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -91,20 +121,22 @@ source venv/bin/activate
 
 # Running the Application
 
-Run the main program:
+Start the program with:
 
-```
+```id="rmn3vd"
 python app.py
 ```
 
-A desktop window will open.
+A desktop window will open where you can start a typing session.
 
-### Steps to use
+---
+
+# Usage
 
 1. Enable the **consent checkbox**
-2. Click **Start**
-3. Type in the input area
-4. Click **Stop** when finished
+2. Click **Start** to begin recording
+3. Type inside the text area
+4. Click **Stop** to finish the session
 5. Export results as **JSON or CSV**
 
 ---
@@ -113,51 +145,56 @@ A desktop window will open.
 
 ### JSON Export
 
-Contains typing session metadata and event logs.
+Contains typing session metadata and keyboard event logs.
 
 Example:
 
-```
+```id="qq5u5c"
 typing_session.json
 ```
 
 ### CSV Export
 
-Contains raw keyboard events.
+Contains raw keyboard event records.
 
 Example:
 
-```
+```id="6sv8m3"
 typing_events.csv
 ```
 
 ---
 
-# Skills Demonstrated
+# Contributing
 
-* Python application development
-* GUI design with Tkinter
-* Event-driven programming
-* Data logging and serialization
-* File export (JSON / CSV)
-* Modular project structure
+Contributions are welcome.
+
+If you'd like to improve the project:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+See **CONTRIBUTING.md** for detailed guidelines.
 
 ---
 
-# Security & Ethics
+# Security and Ethics
 
 This project **does not perform global keylogging**.
 
-Keyboard events are recorded **only when typing inside the application window**, making it safe for educational and research purposes.
+Keyboard events are recorded **only within the application window**, making it safe for educational and demonstration purposes.
 
-This project should **not be modified to monitor users without consent**.
+The software should **not be modified or used to monitor users without their consent**.
 
 ---
 
-# Educational Background
+# Educational Context
 
-This project originated from a **college value-added cybersecurity course** exploring keyboard event monitoring in Python.
-It has been redesigned into a **portfolio-safe typing analysis tool**.
+This project originated from a **college value-added cybersecurity course assignment** focused on keyboard event monitoring in Python.
+
+It has been redesigned into a **portfolio-friendly typing analysis tool**.
 
 ---
 
