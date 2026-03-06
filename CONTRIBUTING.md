@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to **Keyboard Typing Analyzer**.
+Thank you for your interest in contributing to **Keyboard Typing Analyzer**. 
 
 ## How to Contribute
 
