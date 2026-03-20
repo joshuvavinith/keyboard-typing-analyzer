@@ -1,4 +1,4 @@
-# Keyboard Typing Analyzer
+# Keystroke Dynamics Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -92,8 +92,8 @@ keyboard-typing-analyzer
 Clone the repository:
 
 ```bash
-git clone https://github.com/joshuvavinith/keyboard-typing-analyzer.git
-cd keyboard-typing-analyzer
+git clone https://github.com/joshuvavinith/keystroke-dynamics-analysis.git
+cd keystroke-dynamics-analysis
 ```
 
 Create a virtual environment:
